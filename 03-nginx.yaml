@@ -1,7 +1,8 @@
 ---
 - name: nginx insallation
-  hosts: local
   
+  connection: local
+  become: yes
   tasks: 
     - name: insall nginx
       ansible.builtin.package:
