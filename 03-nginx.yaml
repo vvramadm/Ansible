@@ -4,11 +4,11 @@
   become: yes
   tasks: 
     - name: insall nginx
-      ansible.bultin.package:
+      ansible.builtin.package:
     - name: nginx
       state: present
     - name: start nginx service
-      ansible.bultin.service:
+      ansible.builtin.service:
        - name: nginx
          state: started
          enabled: yes
