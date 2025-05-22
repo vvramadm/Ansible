@@ -1,13 +1,14 @@
--name: nginx insallation
+---
+name: nginx insallation
 hosts:web
 become:yes
 tasks: 
-   -name:insallation nginx
-    ansible.builitin.package:
-        -name: nginx
-         state: present
-   -name: start nginx service
-    ansible.builitin.service:
-          -name:nginx
-           state:started
-           enabled:yes
+  -name:insallation nginx
+   ansible.builitin.package:
+     -name: nginx
+      state: present
+  -name: start nginx service
+   ansible.builitin.service:
+      -name:nginx
+      state:started
+      enabled:yes
