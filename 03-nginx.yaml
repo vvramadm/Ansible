@@ -1,6 +1,6 @@
 ---
 - name: nginx insallation
-  hosts: web
+  hosts: local
   become: yes
   tasks: 
     - name: insall nginx
