@@ -5,10 +5,10 @@
   tasks: 
     - name: insall nginx
       ansible.builtin.package:
-    - name: nginx
-      state: present
+          name: nginx
+          state: present
     - name: start nginx service
       ansible.builtin.service:
-       - name: nginx
+         name: nginx
          state: started
          enabled: yes
