@@ -3,12 +3,12 @@
   hosts: web
   become: yes
   tasks: 
-    - name: insallation nginx
-      ansible.builitin.package:
+    - name: insall nginx
+      ansible.bultin.package:
     - name: nginx
       state: present
     - name: start nginx service
-      ansible.builitin.service:
+      ansible.bultin.service:
        - name: nginx
          state: started
          enabled: yes
